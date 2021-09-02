@@ -3,27 +3,85 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E373C0BEDB7F711B346F12D /* Pods_VasaDentalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCB62399F47A7EBCEC57832 /* Pods_VasaDentalApp.framework */; };
+		E423DD36255960AF00D32053 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E423DD35255960AF00D32053 /* CustomerModel.swift */; };
 		E44D785E250752E100117BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D785D250752E100117BCA /* AppDelegate.swift */; };
 		E44D7860250752E100117BCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D785F250752E100117BCA /* SceneDelegate.swift */; };
-		E44D7862250752E100117BCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D7861250752E100117BCA /* ViewController.swift */; };
-		E44D7865250752E100117BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44D7863250752E100117BCA /* Main.storyboard */; };
+		E44D7862250752E100117BCA /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D7861250752E100117BCA /* WelcomeVC.swift */; };
 		E44D7867250752E400117BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44D7866250752E400117BCA /* Assets.xcassets */; };
 		E44D786A250752E400117BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44D7868250752E400117BCA /* LaunchScreen.storyboard */; };
+		E44D7872250790F400117BCA /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D7871250790F400117BCA /* UIHelper.swift */; };
+		E44D78742507A06B00117BCA /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D78732507A06B00117BCA /* UIView+ext.swift */; };
+		E44D78792507BA1400117BCA /* DoctorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D78782507BA1400117BCA /* DoctorCell.swift */; };
+		E44D787C250A5F2000117BCA /* AppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D787B250A5F2000117BCA /* AppointmentVC.swift */; };
+		E456343F250F1EEB004040E1 /* DentalServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456343E250F1EEB004040E1 /* DentalServiceCell.swift */; };
+		E4563441250F96D9004040E1 /* TimeBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4563440250F96D9004040E1 /* TimeBookingVC.swift */; };
+		E4563445250F9DBD004040E1 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4563444250F9DBD004040E1 /* BackButton.swift */; };
+		E4563447250F9E53004040E1 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4563446250F9E53004040E1 /* NextButton.swift */; };
+		E456344A250F9EC4004040E1 /* MiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4563449250F9EC4004040E1 /* MiddleView.swift */; };
+		E456344D250FA092004040E1 /* ViewAndConstraintsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456344C250FA092004040E1 /* ViewAndConstraintsVC.swift */; };
+		E456344F251082A8004040E1 /* CollectionTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456344E251082A8004040E1 /* CollectionTimeCell.swift */; };
+		E4563451251082D6004040E1 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4563450251082D6004040E1 /* TimeCell.swift */; };
+		E456345325108338004040E1 /* DateSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456345225108338004040E1 /* DateSectionCell.swift */; };
+		E45634562511E215004040E1 /* Sting+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45634542511E215004040E1 /* Sting+ext.swift */; };
+		E45634572511E215004040E1 /* Dates+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45634552511E215004040E1 /* Dates+ext.swift */; };
+		E46DC5EC2515E49A00D74E09 /* ConfirmBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46DC5EB2515E49A00D74E09 /* ConfirmBookingVC.swift */; };
+		E4C0C4A02546747800D0F8B7 /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C49F2546747800D0F8B7 /* BookingModel.swift */; };
+		E4C0C4A32546753700D0F8B7 /* DateAndTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C4A22546753700D0F8B7 /* DateAndTimeModel.swift */; };
+		E4C0C4A625467B5E00D0F8B7 /* VaporBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C4A525467B5D00D0F8B7 /* VaporBooking.swift */; };
+		E4C0C4AB2546FE0100D0F8B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C4AA2546FE0100D0F8B7 /* NetworkManager.swift */; };
+		E4C0C4AF2547CE8300D0F8B7 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C4AE2547CE8200D0F8B7 /* PersistenceManager.swift */; };
+		E4C0C4BA254FBFF500D0F8B7 /* CollectionConfirmBookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C4B9254FBFF500D0F8B7 /* CollectionConfirmBookingCell.swift */; };
+		E4C0C4BD254FC02F00D0F8B7 /* TableViewConfirmBookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C4BC254FC02F00D0F8B7 /* TableViewConfirmBookingCell.swift */; };
+		E4C0C4C02550F29F00D0F8B7 /* MiddleViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C4BF2550F29F00D0F8B7 /* MiddleViewButton.swift */; };
+		E4C0C4CB2552D3EA00D0F8B7 /* RateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C4CA2552D3E900D0F8B7 /* RateController.swift */; };
+		E4C0C4D625551C0500D0F8B7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C4D525551C0300D0F8B7 /* TabBarController.swift */; };
+		E4C0C4DA2555230200D0F8B7 /* PersonalPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C0C4D92555230100D0F8B7 /* PersonalPageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03D78CA407ACF7D22463B93C /* Pods-VasaDentalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VasaDentalApp.debug.xcconfig"; path = "Target Support Files/Pods-VasaDentalApp/Pods-VasaDentalApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B2728DADDABE2F10351311AB /* Pods-VasaDentalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VasaDentalApp.release.xcconfig"; path = "Target Support Files/Pods-VasaDentalApp/Pods-VasaDentalApp.release.xcconfig"; sourceTree = "<group>"; };
+		E423DD35255960AF00D32053 /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
 		E44D785A250752E100117BCA /* VasaDentalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VasaDentalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44D785D250752E100117BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44D785F250752E100117BCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E44D7861250752E100117BCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E44D7864250752E100117BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E44D7861250752E100117BCA /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		E44D7866250752E400117BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E44D7869250752E400117BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E44D786B250752E400117BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44D7871250790F400117BCA /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		E44D78732507A06B00117BCA /* UIView+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
+		E44D78782507BA1400117BCA /* DoctorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCell.swift; sourceTree = "<group>"; };
+		E44D787B250A5F2000117BCA /* AppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentVC.swift; sourceTree = "<group>"; };
+		E456343E250F1EEB004040E1 /* DentalServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentalServiceCell.swift; sourceTree = "<group>"; };
+		E4563440250F96D9004040E1 /* TimeBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBookingVC.swift; sourceTree = "<group>"; };
+		E4563444250F9DBD004040E1 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		E4563446250F9E53004040E1 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NextButton.swift; path = "VasaDentalApp/CustomViews/New Group/NextButton.swift"; sourceTree = SOURCE_ROOT; };
+		E4563449250F9EC4004040E1 /* MiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleView.swift; sourceTree = "<group>"; };
+		E456344C250FA092004040E1 /* ViewAndConstraintsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAndConstraintsVC.swift; sourceTree = "<group>"; };
+		E456344E251082A8004040E1 /* CollectionTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTimeCell.swift; sourceTree = "<group>"; };
+		E4563450251082D6004040E1 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		E456345225108338004040E1 /* DateSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSectionCell.swift; sourceTree = "<group>"; };
+		E45634542511E215004040E1 /* Sting+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sting+ext.swift"; sourceTree = "<group>"; };
+		E45634552511E215004040E1 /* Dates+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dates+ext.swift"; sourceTree = "<group>"; };
+		E46DC5EB2515E49A00D74E09 /* ConfirmBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBookingVC.swift; sourceTree = "<group>"; };
+		E4C0C49F2546747800D0F8B7 /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
+		E4C0C4A22546753700D0F8B7 /* DateAndTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimeModel.swift; sourceTree = "<group>"; };
+		E4C0C4A525467B5D00D0F8B7 /* VaporBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporBooking.swift; sourceTree = "<group>"; };
+		E4C0C4AA2546FE0100D0F8B7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E4C0C4AE2547CE8200D0F8B7 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		E4C0C4B9254FBFF500D0F8B7 /* CollectionConfirmBookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionConfirmBookingCell.swift; sourceTree = "<group>"; };
+		E4C0C4BC254FC02F00D0F8B7 /* TableViewConfirmBookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewConfirmBookingCell.swift; sourceTree = "<group>"; };
+		E4C0C4BF2550F29F00D0F8B7 /* MiddleViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleViewButton.swift; sourceTree = "<group>"; };
+		E4C0C4CA2552D3E900D0F8B7 /* RateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateController.swift; sourceTree = "<group>"; };
+		E4C0C4D525551C0300D0F8B7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E4C0C4D92555230100D0F8B7 /* PersonalPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageVC.swift; sourceTree = "<group>"; };
+		FFCB62399F47A7EBCEC57832 /* Pods_VasaDentalApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VasaDentalApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +89,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E373C0BEDB7F711B346F12D /* Pods_VasaDentalApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1A8581E931B710DC982A41D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03D78CA407ACF7D22463B93C /* Pods-VasaDentalApp.debug.xcconfig */,
+				B2728DADDABE2F10351311AB /* Pods-VasaDentalApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E44D7851250752E000117BCA = {
 			isa = PBXGroup;
 			children = (
 				E44D785C250752E100117BCA /* VasaDentalApp */,
 				E44D785B250752E100117BCA /* Products */,
+				D1A8581E931B710DC982A41D /* Pods */,
+				FFF04086DC170C6E49BD0828 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +126,139 @@
 		E44D785C250752E100117BCA /* VasaDentalApp */ = {
 			isa = PBXGroup;
 			children = (
-				E44D785D250752E100117BCA /* AppDelegate.swift */,
-				E44D785F250752E100117BCA /* SceneDelegate.swift */,
-				E44D7861250752E100117BCA /* ViewController.swift */,
-				E44D7863250752E100117BCA /* Main.storyboard */,
-				E44D7866250752E400117BCA /* Assets.xcassets */,
+				E44D78762507B9C500117BCA /* Support */,
+				E4C0C4A82546FDC900D0F8B7 /* Managers */,
+				E4C0C49E2546746400D0F8B7 /* Models */,
+				E4563442250F9C83004040E1 /* CustomViews */,
+				E44D78772507B9EE00117BCA /* Extensions */,
+				E4C0C4C92552D32A00D0F8B7 /* Controllers */,
+				E44D78752507B9AD00117BCA /* Screens */,
 				E44D7868250752E400117BCA /* LaunchScreen.storyboard */,
 				E44D786B250752E400117BCA /* Info.plist */,
+				E44D7871250790F400117BCA /* UIHelper.swift */,
+				E44D787A2507BA1800117BCA /* Cells */,
 			);
 			path = VasaDentalApp;
+			sourceTree = "<group>";
+		};
+		E44D78752507B9AD00117BCA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E456344B250FA06C004040E1 /* BaseVC */,
+				E44D7861250752E100117BCA /* WelcomeVC.swift */,
+				E44D787B250A5F2000117BCA /* AppointmentVC.swift */,
+				E4563440250F96D9004040E1 /* TimeBookingVC.swift */,
+				E46DC5EB2515E49A00D74E09 /* ConfirmBookingVC.swift */,
+				E4C0C4D92555230100D0F8B7 /* PersonalPageVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E44D78762507B9C500117BCA /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E44D785D250752E100117BCA /* AppDelegate.swift */,
+				E44D785F250752E100117BCA /* SceneDelegate.swift */,
+				E44D7866250752E400117BCA /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E44D78772507B9EE00117BCA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E45634552511E215004040E1 /* Dates+ext.swift */,
+				E45634542511E215004040E1 /* Sting+ext.swift */,
+				E44D78732507A06B00117BCA /* UIView+ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E44D787A2507BA1800117BCA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E44D78782507BA1400117BCA /* DoctorCell.swift */,
+				E456343E250F1EEB004040E1 /* DentalServiceCell.swift */,
+				E456344E251082A8004040E1 /* CollectionTimeCell.swift */,
+				E4563450251082D6004040E1 /* TimeCell.swift */,
+				E456345225108338004040E1 /* DateSectionCell.swift */,
+				E4C0C4B9254FBFF500D0F8B7 /* CollectionConfirmBookingCell.swift */,
+				E4C0C4BC254FC02F00D0F8B7 /* TableViewConfirmBookingCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E4563442250F9C83004040E1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E4563448250F9EAC004040E1 /* Views */,
+				E4563443250F9C8C004040E1 /* Buttons */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E4563443250F9C8C004040E1 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E4563444250F9DBD004040E1 /* BackButton.swift */,
+				E4563446250F9E53004040E1 /* NextButton.swift */,
+				E4C0C4BF2550F29F00D0F8B7 /* MiddleViewButton.swift */,
+			);
+			name = Buttons;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E4563448250F9EAC004040E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4563449250F9EC4004040E1 /* MiddleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E456344B250FA06C004040E1 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				E456344C250FA092004040E1 /* ViewAndConstraintsVC.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		E4C0C49E2546746400D0F8B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4C0C49F2546747800D0F8B7 /* BookingModel.swift */,
+				E4C0C4A22546753700D0F8B7 /* DateAndTimeModel.swift */,
+				E4C0C4A525467B5D00D0F8B7 /* VaporBooking.swift */,
+				E423DD35255960AF00D32053 /* CustomerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E4C0C4A82546FDC900D0F8B7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E4C0C4AA2546FE0100D0F8B7 /* NetworkManager.swift */,
+				E4C0C4AE2547CE8200D0F8B7 /* PersistenceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E4C0C4C92552D32A00D0F8B7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4C0C4CA2552D3E900D0F8B7 /* RateController.swift */,
+				E4C0C4D525551C0300D0F8B7 /* TabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FFF04086DC170C6E49BD0828 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFCB62399F47A7EBCEC57832 /* Pods_VasaDentalApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E44D786E250752E400117BCA /* Build configuration list for PBXNativeTarget "VasaDentalApp" */;
 			buildPhases = (
+				8F7C61F02DDD14DBE0EF1513 /* [CP] Check Pods Manifest.lock */,
 				E44D7856250752E100117BCA /* Sources */,
 				E44D7857250752E100117BCA /* Frameworks */,
 				E44D7858250752E100117BCA /* Resources */,
+				E0B2AC9B654E8F76C5217552 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +323,95 @@
 			files = (
 				E44D786A250752E400117BCA /* LaunchScreen.storyboard in Resources */,
 				E44D7867250752E400117BCA /* Assets.xcassets in Resources */,
-				E44D7865250752E100117BCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F7C61F02DDD14DBE0EF1513 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VasaDentalApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0B2AC9B654E8F76C5217552 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VasaDentalApp/Pods-VasaDentalApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VasaDentalApp/Pods-VasaDentalApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VasaDentalApp/Pods-VasaDentalApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E44D7856250752E100117BCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E44D7862250752E100117BCA /* ViewController.swift in Sources */,
+				E4C0C4AB2546FE0100D0F8B7 /* NetworkManager.swift in Sources */,
+				E44D78792507BA1400117BCA /* DoctorCell.swift in Sources */,
+				E46DC5EC2515E49A00D74E09 /* ConfirmBookingVC.swift in Sources */,
+				E4C0C4BA254FBFF500D0F8B7 /* CollectionConfirmBookingCell.swift in Sources */,
+				E4C0C4A32546753700D0F8B7 /* DateAndTimeModel.swift in Sources */,
+				E45634562511E215004040E1 /* Sting+ext.swift in Sources */,
+				E44D7862250752E100117BCA /* WelcomeVC.swift in Sources */,
 				E44D785E250752E100117BCA /* AppDelegate.swift in Sources */,
+				E456345325108338004040E1 /* DateSectionCell.swift in Sources */,
+				E4563451251082D6004040E1 /* TimeCell.swift in Sources */,
+				E456343F250F1EEB004040E1 /* DentalServiceCell.swift in Sources */,
+				E4C0C4C02550F29F00D0F8B7 /* MiddleViewButton.swift in Sources */,
+				E4C0C4DA2555230200D0F8B7 /* PersonalPageVC.swift in Sources */,
+				E4563445250F9DBD004040E1 /* BackButton.swift in Sources */,
 				E44D7860250752E100117BCA /* SceneDelegate.swift in Sources */,
+				E4563447250F9E53004040E1 /* NextButton.swift in Sources */,
+				E4C0C4CB2552D3EA00D0F8B7 /* RateController.swift in Sources */,
+				E4C0C4BD254FC02F00D0F8B7 /* TableViewConfirmBookingCell.swift in Sources */,
+				E4C0C4A625467B5E00D0F8B7 /* VaporBooking.swift in Sources */,
+				E4563441250F96D9004040E1 /* TimeBookingVC.swift in Sources */,
+				E4C0C4AF2547CE8300D0F8B7 /* PersistenceManager.swift in Sources */,
+				E456344F251082A8004040E1 /* CollectionTimeCell.swift in Sources */,
+				E44D7872250790F400117BCA /* UIHelper.swift in Sources */,
+				E456344A250F9EC4004040E1 /* MiddleView.swift in Sources */,
+				E423DD36255960AF00D32053 /* CustomerModel.swift in Sources */,
+				E4C0C4D625551C0500D0F8B7 /* TabBarController.swift in Sources */,
+				E456344D250FA092004040E1 /* ViewAndConstraintsVC.swift in Sources */,
+				E44D78742507A06B00117BCA /* UIView+ext.swift in Sources */,
+				E44D787C250A5F2000117BCA /* AppointmentVC.swift in Sources */,
+				E45634572511E215004040E1 /* Dates+ext.swift in Sources */,
+				E4C0C4A02546747800D0F8B7 /* BookingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E44D7863250752E100117BCA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E44D7864250752E100117BCA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E44D7868250752E400117BCA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +539,7 @@
 		};
 		E44D786F250752E400117BCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03D78CA407ACF7D22463B93C /* Pods-VasaDentalApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +552,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kavinskyi.VasaDentalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E44D7870250752E400117BCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2728DADDABE2F10351311AB /* Pods-VasaDentalApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +571,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kavinskyi.VasaDentalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
